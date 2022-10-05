@@ -10,10 +10,7 @@ nav li {
 nav a { text-decoration: none; }
 nav a:link { color:black; }
 nav a:visited { color:black; }
-nav a:hover {
-    color:blue;
-    text-decoration: underline;
-}
+nav a:hover { color:blue; }
 
 main {
     margin: 0.5em;
