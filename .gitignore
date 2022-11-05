@@ -1,6 +1,6 @@
 # sass output
-scss/*.css
-scss/*.map
+css/*.css
+css/*.map
 
 # lockfiles
 package-lock.json
@@ -8,6 +8,3 @@ pnpm-lock.yml
 
 # node modules
 node_modules
-
-# postcss output
-main.css
