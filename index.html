@@ -5,80 +5,45 @@
         <meta name="description" content="Webseite des Hotel wiezuhause">
         <meta name="author" content="Oskar Manhart">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" crossorigin="anonymous">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
+        <title>Das Waldhotel | Startseite</title>
+
+        <link rel="stylesheet" crossorigin type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+                
+        <script crossorigin type="application/javascript" src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+        <script crossorigin type="application/javascript" src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+        <script crossorigin type="application/javascript" src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
         
         <link rel="stylesheet" type="text/css" href="css/index.css">
-        
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+        <script src="js/components.jsx" type="text/babel"></script>
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg bg-light sticky-top">
-            <ul>
-                <a aria-current="page">
-                    <li><i class="bi-house-heart-fill"></i></li>
-                    <li><strong>Hotel wiezuhause</strong> - Bei uns ist es so schön wie zuhause!</li>
-                </a>
-                <li><a href="zimmer.html">Zimmer</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
-            </ul>
-        </nav>
+        
+        <div id="upper" class="mainnav"></div>
+        <div id="lower" class="mainnav"></div>
+
+        <section id="banner">
+            <h1>Idylle pur seit 1956</h1>
+        </section>
 
         <main>
-            <section id="standorte" class="hstack">
-                <section id="standort-bielefeld" class="card standort">
-                    <img src="img/bielefeld.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">Bielefeld</h5>
-                        <p class="card-text">
-                            Unserer Standort in Bielefeld.
-    
-                            <ul>
-                                <li>Kostenloses W-LAN</li>
-                                <li>Frühstück</li>
-                                <li>Parkplätze</li>
-                                <li>Klimaanlage</li>
-                            </ul>
-    
-                            <strong>Anschrift:</strong>
-                            Europaplatz 2, 33613 Bielefeld
-                        </p>
-                        <a href="https://www.google.com/maps/place/Europaplatz+2,+33613+Bielefeld" target="_blank" class="btn btn-primary">Öffne in Google Maps</a>
-                    </div>
-                </section>
-    
-                <section id="standort-wernigerode" class="card standort">
-                    <img src="img/wernigerode.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">Wernigerode</h5>
-                        <p class="card-text">
-                            Unserer Standort in Wernigerode.
-    
-                            <ul>
-                                <li>Kostenloses W-LAN</li>
-                                <li>Haustierfreundlich</li>
-                                <li>Parkplätze</li>
-                                <li>Spa</li>
-                            </ul>
-    
-                            <strong>Anschrift:</strong>
-                            Nöschenröder Straße 42-43, 38855 Wernigerode
-                        </p>
-                        <a href="https://www.google.com/maps/place/Nöschenröder+Straße+42-43,+38855+Wernigerode" target="_blank" class="btn btn-primary">Öffne in Google Maps</a>
-                    </div>
-                </section>
-            </section>            
+            <section id="aboutus">
+                <h3>Unsere Vision</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed nisi lacus sed viverra tellus in hac habitasse platea. Non curabitur gravida arcu ac tortor. Volutpat lacus laoreet non curabitur gravida arcu ac tortor dignissim. Pharetra diam sit amet nisl suscipit adipiscing. Viverra mauris in aliquam sem fringilla ut morbi tincidunt. Eget velit aliquet sagittis id consectetur purus ut. Scelerisque purus semper eget duis. Eget magna fermentum iaculis eu non diam phasellus vestibulum. Odio aenean sed adipiscing diam. Quis enim lobortis scelerisque fermentum dui faucibus. At quis risus sed vulputate odio ut enim. Vestibulum sed arcu non odio euismod lacinia. Gravida in fermentum et sollicitudin ac orci. Risus quis varius quam quisque id diam vel.</p>
+            </section>
+
+            <section id="hotels">
+                <h3>Unsere Hütten</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed nisi lacus sed viverra tellus in hac habitasse platea. Non curabitur gravida arcu ac tortor. Volutpat lacus laoreet non curabitur gravida arcu ac tortor dignissim. Pharetra diam sit amet nisl suscipit adipiscing. Viverra mauris in aliquam sem fringilla ut morbi tincidunt. Eget velit aliquet sagittis id consectetur purus ut. Scelerisque purus semper eget duis. Eget magna fermentum iaculis eu non diam phasellus vestibulum. Odio aenean sed adipiscing diam. Quis enim lobortis scelerisque fermentum dui faucibus. At quis risus sed vulputate odio ut enim. Vestibulum sed arcu non odio euismod lacinia. Gravida in fermentum et sollicitudin ac orci. Risus quis varius quam quisque id diam vel.</p>
+            </section>
+
+            <section id="locations">
+                <h3>Unsere Standorte</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed nisi lacus sed viverra tellus in hac habitasse platea. Non curabitur gravida arcu ac tortor. Volutpat lacus laoreet non curabitur gravida arcu ac tortor dignissim. Pharetra diam sit amet nisl suscipit adipiscing. Viverra mauris in aliquam sem fringilla ut morbi tincidunt. Eget velit aliquet sagittis id consectetur purus ut. Scelerisque purus semper eget duis. Eget magna fermentum iaculis eu non diam phasellus vestibulum. Odio aenean sed adipiscing diam. Quis enim lobortis scelerisque fermentum dui faucibus. At quis risus sed vulputate odio ut enim. Vestibulum sed arcu non odio euismod lacinia. Gravida in fermentum et sollicitudin ac orci. Risus quis varius quam quisque id diam vel.</p>
+            </section>
         </main>
 
-        <footer class="bg-light fixed-bottom">
-            <nav>
-                <ul class="hstack gap-3">
-                    <li><a href="https://github.com/oskardotglobal/hotelwebseite"><i class="bi-github"></i></a></li>
-                    <li><a href="https://github.com/oskardotglobal" target="_blank">© 2022 Oskar Manhart</a></li>
-                    <li><a href="https://mit-license.org/" target="_blank">Quellcode lizensiert unter MIT</a></li>
-                </ul>
-            </nav>
-         </footer>
+        <footer id="footer"></footer>
     </body>
 </html>
