@@ -1,5 +1,10 @@
 # sass output
 scss/*.css
+scss/*.map
 
-# npm lock
+# lockfiles
 package-lock.json
+pnpm-lock.yml
+
+# node modules
+node_modules
