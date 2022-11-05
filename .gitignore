@@ -1,7 +1,3 @@
-# sass output
-css/*.css
-css/*.map
-
 # lockfiles
 package-lock.json
 pnpm-lock.yml
