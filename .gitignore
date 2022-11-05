@@ -1,0 +1,5 @@
+# sass output
+scss/*.css
+
+# npm lock
+package-lock.json
