@@ -1,0 +1,49 @@
+$link-color: black;  
+
+a {
+    text-decoration: none;
+        
+    &:link { color: $link-color; }
+    &:visited { color: $link-color; }
+    &:hover { color: blue; }
+}
+
+nav {
+    ul { list-style: none; }
+    li { display: inline-block; margin: 0.5em; }
+}
+
+#mainnav {
+    height: 50px;
+    width: 100%;
+
+    display: grid;
+    a { display: inline-grid; }
+    column-gap: 50px;
+}
+
+
+main {
+    margin: 0.5em;
+    padding-left: 2%;
+}
+
+.card img {
+    height: 33%;
+}
+
+.standort {
+    width: 25rem;
+    height: 35rem;
+    margin: 20px;
+}
+
+.zimmer {
+    width: 35rem;
+    height: 40rem;
+    margin: 20px;
+
+    img {
+        height: 65%;
+    }
+}

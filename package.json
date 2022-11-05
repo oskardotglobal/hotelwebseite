@@ -1,0 +1,20 @@
+{
+  "name": "hotelwebseite",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "rm -f css/* && sass scss:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oskardotglobal/hotelwebseite.git"
+  },
+  "author": "Oskar Manhart",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oskardotglobal/hotelwebseite/issues"
+  },
+  "homepage": "https://github.com/oskardotglobal/hotelwebseite#readme",
+  "devDependencies": {
+    "sass": "^1.56.0"
+  }
+}
