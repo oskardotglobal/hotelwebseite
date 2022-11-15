@@ -2,7 +2,7 @@
   "name": "hotelwebseite",
   "version": "1.0.0",
   "scripts": {
-    "build": "rm -f css/* && sass scss:css"
+    "build": "rm -f css/* && npx sass scss:css"
   },
   "repository": {
     "type": "git",

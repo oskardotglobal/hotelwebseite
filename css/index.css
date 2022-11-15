@@ -51,7 +51,6 @@ a:hover {
 }
 
 #upper {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   background-color: #3b8f49;
@@ -133,7 +132,6 @@ main #contact .button {
   align-items: center;
 }
 main #contact #box {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   bottom: 2em;
@@ -157,4 +155,6 @@ main #contact #box {
   align-items: center;
   font-size: 5em;
   color: black;
-}/*# sourceMappingURL=index.css.map */
+}
+
+/*# sourceMappingURL=index.css.map */
