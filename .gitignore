@@ -1,6 +1,6 @@
 # lockfiles
 package-lock.json
-pnpm-lock.yml
+pnpm-lock.yaml
 
 # node modules
 node_modules
