@@ -3,7 +3,7 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: #87A878;
+  background-color: #3b8f49;
 }
 
 header, footer {
@@ -12,6 +12,14 @@ header, footer {
 
 p, a, h1, h2, h3, h4, h5, h6 {
   font-family: "Courier New", Courier, monospace;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #752d17;
+}
+
+p {
+  color: black;
 }
 
 a {
@@ -27,23 +35,44 @@ a:hover {
   color: blue;
 }
 
+.button {
+  background-color: rgb(8, 88, 15);
+  border: 0.2em solid;
+  border-radius: 0.3em;
+  border-color: white;
+  height: 3em;
+  width: 10em;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+.button:hover {
+  border-width: 0.3em;
+  color: black;
+}
+
 #upper {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  background-color: #87A878;
+  background-color: #3b8f49;
 }
 #upper nav {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  height: 5em;
+  height: 6em;
 }
 #upper nav a {
-  font-size: 1.2em;
+  font-size: 1.3em;
   font-weight: bold;
+}
+#upper nav a:hover {
+  color: black;
 }
 #upper nav a i {
   font-size: 3em;
   color: #104911;
+}
+#upper nav .button {
+  font-size: 1.1em;
 }
 
 #lower {
@@ -62,6 +91,7 @@ a:hover {
 footer {
   position: fixed;
   bottom: 0;
+  background-color: #3b8f49;
 }
 footer nav {
   grid-template-columns: 1fr 1fr 1fr;
@@ -81,8 +111,33 @@ nav a {
 }
 
 main {
-  width: 100%;
-  margin: 2em;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  padding: 2em;
+  background-color: #75a55f;
+}
+main h1 {
+  color: #752d17;
+}
+main #contact {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  padding: 0 1em 0 1em;
+  top: 0;
+  margin-left: 1em;
+}
+main #contact .button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+main #contact #box {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  bottom: 2em;
+  align-self: flex-end;
 }
 
 #banner {
