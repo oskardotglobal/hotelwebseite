@@ -9,13 +9,17 @@ function LowerNav(props) {
 }
 
 function UpperNav(props) {
+    const buttonStyle = { padding: '0.5em' };
+
     return (
         <nav>
             <a href="#">Standorte</a>
             <a href="#">Zimmer</a>
             <a href="index.html"><i class="bi-house-heart-fill logo"></i></a>
             <a href="#">Restaurants</a>
-            <a href="kontakt.html">Jetzt buchen</a>
+            <a href="#" style={buttonStyle}>
+                <a class="button">Jetzt buchen</a>
+            </a>
         </nav>
     );
 }
