@@ -1,0 +1,22 @@
+$accent-color: #3b8f49;
+
+$background-color: #3b8f49;
+$content-background-color: #75a55f;
+
+$text-color: black;
+
+$navbar-headings-color: #104911;
+$main-headings-color: black;
+
+$link-color: $text-color;
+$link-hover: blue;
+
+$headings-color: #752d17;
+
+$button-color: rgb(8, 88, 15);
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

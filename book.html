@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Webseite des Hotel wiezuhause">
+    <meta name="author" content="Oskar Manhart">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Das Waldhotel | Buchen</title>
+        
+    <script crossorigin type="application/javascript" src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin type="application/javascript" src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script crossorigin type="application/javascript" src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+    <script crossorigin type="application/javascript" src="https://kit.fontawesome.com/ed6d59f7d7.js"></script>
+    
+    <link type="text/css" rel="stylesheet" href="css/book.css">
+    
+    <script type="text/javascript" src="js/scroll.js"></script>
+    <script type="text/babel" src="js/components.jsx"></script>
+</head>
+<body>
+    
+    <div id="upper" class="mainnav"></div>
+    <div id="lower" class="mainnav"></div>
+    
+    <section id="banner">
+        <div id="heading">
+            <h1>Idylle pur seit 1956</h1>
+        </div>
+    </section>
+    
+    <main>
+        <section id="content">
+            <!-- 
+                Basiert auf https://codepen.io/arefeh_htmi/pen/mdPYZKJ
+                Weiterverwendet nach MIT, siehe LICENSE
+            -->
+            <form>
+                <section>
+                    <h4>Account</h4>
+                    <div class="input-group input-group-icon">
+                        <input type="text" placeholder="Vor- und Nachname"/>
+                        <div class="input-icon"><i class="fa fa-user"></i></div>
+                    </div>
+                    <div class="input-group input-group-icon">
+                        <input type="email" placeholder="Email-Addresse"/>
+                        <div class="input-icon"><i class="fa fa-envelope"></i></div>
+                    </div>
+                    <div class="input-group input-group-icon">
+                        <input type="password" placeholder="Passwort"/>
+                        <div class="input-icon"><i class="fa fa-key"></i></div>
+                    </div>
+                </section>
+
+                <section>
+                    <h4>Zahlungsmethoden</h4>
+                    <div class="input-group input-group-icon">
+                        <input type="text" placeholder="Kartennummer"/>
+                        <div class="input-icon"><i class="fa fa-credit-card"></i></div>
+                    </div>
+                    <div class="col-half">
+                        <div class="input-group input-group-icon">
+                            <input type="text" placeholder="Prüfnummer"/>
+                            <div class="input-icon"><i class="fa fa-user"></i></div>
+                        </div>
+                    </div>
+                    <div class="col-half">
+                        <div class="input-group">
+                            <select>
+                                <option>01 Jan</option>
+                                <option>02 Jan</option>
+                            </select>
+                            <select>
+                                <option>2023</option>
+                                <option>2024</option>
+                            </select>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h4>AGB</h4>
+                    <div class="input-group">
+                        <input id="terms" type="checkbox"/>
+                        <label for="terms">Ich habe die Allgemeinen Geschäftsbedingungen gelesen und akzeptiere sie.</label>
+                    </div>
+                </section>
+
+                <br>
+
+                <section id="continue">
+                    <a id="continue-btn">Weiter zur Buchung..</a>
+                </section>
+            </form>
+            
+        </section>
+        
+        <aside id="contact">
+            <div id="box">
+                <h3>Kontakt</h3>
+                <p>
+                    Anfahrt: <br>
+                    Telefon: <br>
+                    .... <br>
+                    .... <br>
+                    .... <br>
+                    .... <br>
+                </p>
+            </div>
+        </aside>
+    </main>
+    
+    <footer id="footer"></footer>
+</body>
+</html>

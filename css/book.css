@@ -1,0 +1,394 @@
+@import url(https://fonts.bunny.net/css?family=Enriqueta);
+@import url(https://fonts.bunny.net/css?family=Carattere);
+@import url(https://fonts.bunny.net/css?family=Bona-Nova);
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #3b8f49;
+}
+
+header, footer {
+  width: 100%;
+}
+
+p, a, h1, h2, h3, h4, h5, h6 {
+  font-family: "Bona Nova", serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #752d17;
+}
+
+p {
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+a:link {
+  color: black;
+}
+a:visited {
+  color: black;
+}
+a:hover {
+  color: blue;
+}
+
+.button {
+  background-color: rgb(8, 88, 15);
+  border: 0.2em solid;
+  border-radius: 0.3em;
+  border-color: white;
+  height: 3em;
+  width: 10em;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+.button:hover {
+  transform: scale(1.05);
+  color: black;
+}
+
+#upper {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #3b8f49;
+}
+#upper nav {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  height: 6em;
+}
+#upper nav a {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+#upper nav a:hover {
+  color: black;
+}
+#upper nav a i {
+  font-size: 3em;
+  color: #104911;
+}
+#upper nav .button {
+  font-size: 1.1em;
+}
+
+#lower {
+  z-index: 999;
+  bottom: 0;
+}
+#lower nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#lower nav h1 {
+  color: #104911;
+  font-size: 2em;
+  font-family: "Carattere";
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  background-color: #3b8f49;
+}
+footer nav {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+footer nav a {
+  font-family: "Courier New", Courier, monospace;
+}
+
+nav {
+  width: 100%;
+  max-width: 100%;
+  left: 0;
+  bottom: 0;
+  display: inline-grid;
+}
+nav a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  padding: 6em;
+  padding-top: 2em;
+  background-color: #75a55f;
+}
+main h1 {
+  color: #752d17;
+}
+main #contact {
+  padding: 0 1em 0 1em;
+  margin-left: 1em;
+}
+main #contact .button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+main #contact #box {
+  margin-top: calc((var(--scroll)) * 1% + 35%);
+}
+main .employees {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+main .employees .employee {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main .employees .employee img {
+  width: 8em;
+  height: 8em;
+  border-radius: 70%;
+  border: solid 0.3em #752d17;
+}
+main .employees .employee span {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#banner {
+  width: 100%;
+  background-image: url("../img/banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  height: 25em;
+}
+#banner #heading {
+  height: 100%;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#banner #heading h1 {
+  font-family: "Enriqueta";
+  font-size: 5em;
+  color: black;
+  background-color: rgba(59, 143, 73, 0.5);
+}
+
+#upper {
+  position: relative;
+}
+
+#lower {
+  display: none;
+}
+
+main #content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 1em;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+}
+main #content #continue {
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+main #content #continue-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: #752d17;
+  padding: 0.7em;
+  height: 3em;
+  width: 10em;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+main #content #continue-btn:hover {
+  transform: scale(1.05);
+  color: #752d17;
+}
+main #content input:focus + .input-icon i {
+  color: #3b8f49;
+}
+main #content input:focus + .input-icon:after {
+  border-right-color: #3b8f49;
+}
+main #content input[type=radio] + label i {
+  padding-right: 0.4em;
+}
+main #content input[type=radio] {
+  display: none;
+}
+main #content input:checked + label:after {
+  opacity: 1;
+}
+main #content input[type=checkbox] {
+  display: none;
+}
+main #content section:before {
+  content: "";
+  display: table;
+}
+main #content section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+main #content select {
+  height: 3.4em;
+  line-height: 2;
+}
+main #content select:last-of-type {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+main #content select:first-of-type {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+main #content select:focus, main #content select:active {
+  outline: 0;
+}
+main #content select option {
+  background-color: #3b8f49;
+  color: #fff;
+}
+main #content .input-group {
+  margin-bottom: 1em;
+  zoom: 1;
+}
+main #content .input-group:before, main #content .input-group:after {
+  content: "";
+  display: table;
+}
+main #content .input-group:after {
+  clear: both;
+}
+main #content .input-group-icon {
+  position: relative;
+}
+main #content .input-group-icon input {
+  padding-left: 4.4em;
+}
+main #content .input-group-icon .input-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3.4em;
+  height: 3.4em;
+  line-height: 3.4em;
+  text-align: center;
+  pointer-events: none;
+}
+main #content .input-group-icon .input-icon:after {
+  position: absolute;
+  top: 0.6em;
+  bottom: 0.6em;
+  left: 3.4em;
+  display: block;
+  border-right: 1px solid #e5e5e5;
+  content: "";
+  transition: all 0.35s ease-in-out;
+}
+main #content .input-group-icon .input-icon i {
+  transition: all 0.35s ease-in-out;
+}
+main #content input,
+main #content input[type=radio] + label,
+main #content input[type=checkbox] + label:before,
+main #content select option,
+main #content select {
+  width: 100%;
+  padding: 1em;
+  line-height: 1.4;
+  background-color: #f9f9f9;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  transition: all 0.35s ease-in-out;
+}
+main #content input:focus {
+  outline: 0;
+  border-color: #3b8f49;
+}
+main #content input[type=radio] + label,
+main #content select {
+  width: 50%;
+  text-align: center;
+  float: left;
+  border-radius: 0;
+}
+main #content input[type=radio] + label:first-of-type {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+main #content input[type=radio] + label:last-of-type {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+main #content input[type=radio]:checked + label,
+main #content input:checked + label:before,
+main #content select:focus,
+main #content select:active {
+  background-color: #3b8f49;
+  color: #fff;
+  border-color: #3b8f49;
+}
+main #content input[type=checkbox] + label {
+  position: relative;
+  display: block;
+  padding-left: 1.6em;
+}
+main #content input[type=checkbox] + label:before {
+  position: absolute;
+  top: 0.2em;
+  left: 0;
+  display: block;
+  width: 1em;
+  height: 1em;
+  padding: 0;
+  content: "";
+}
+main #content input[type=checkbox] + label:after {
+  position: absolute;
+  top: 0.45em;
+  left: 0.2em;
+  font-size: 0.8em;
+  color: #fff;
+  opacity: 0;
+  font-family: FontAwesome;
+  content: "\f00c";
+}
+main #content .col-half {
+  padding-right: 10px;
+  float: left;
+  width: 50%;
+}
+main #content .col-half:last-of-type {
+  padding-right: 0;
+}
+main #content .col-third {
+  padding-right: 10px;
+  float: left;
+  width: 1/3fr;
+}
+main #content .col-third:last-of-type {
+  padding-right: 0;
+}/*# sourceMappingURL=book.css.map */

@@ -1,3 +1,6 @@
+@import url(https://fonts.bunny.net/css?family=Enriqueta);
+@import url(https://fonts.bunny.net/css?family=Carattere);
+@import url(https://fonts.bunny.net/css?family=Bona-Nova);
 html, body {
   width: 100%;
   height: 100%;
@@ -11,7 +14,7 @@ header, footer {
 }
 
 p, a, h1, h2, h3, h4, h5, h6 {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Bona Nova", serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -46,11 +49,12 @@ a:hover {
   font-weight: bold;
 }
 .button:hover {
-  border-width: 0.3em;
+  transform: scale(1.05);
   color: black;
 }
 
 #upper {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   background-color: #3b8f49;
@@ -75,6 +79,7 @@ a:hover {
 }
 
 #lower {
+  z-index: 999;
   bottom: 0;
 }
 #lower nav {
@@ -85,6 +90,7 @@ a:hover {
 #lower nav h1 {
   color: #104911;
   font-size: 2em;
+  font-family: "Carattere";
 }
 
 footer {
@@ -94,6 +100,9 @@ footer {
 }
 footer nav {
   grid-template-columns: 1fr 1fr 1fr;
+}
+footer nav a {
+  font-family: "Courier New", Courier, monospace;
 }
 
 nav {
@@ -112,18 +121,15 @@ nav a {
 main {
   display: grid;
   grid-template-columns: 4fr 1fr;
-  padding: 2em;
+  padding: 6em;
+  padding-top: 2em;
   background-color: #75a55f;
 }
 main h1 {
   color: #752d17;
 }
 main #contact {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: row;
   padding: 0 1em 0 1em;
-  top: 0;
   margin-left: 1em;
 }
 main #contact .button {
@@ -132,10 +138,28 @@ main #contact .button {
   align-items: center;
 }
 main #contact #box {
-  position: sticky;
-  top: 0;
-  bottom: 2em;
-  align-self: flex-end;
+  margin-top: calc((var(--scroll)) * 1% + 35%);
+}
+main .employees {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+main .employees .employee {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main .employees .employee img {
+  width: 8em;
+  height: 8em;
+  border-radius: 70%;
+  border: solid 0.3em #752d17;
+}
+main .employees .employee span {
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 #banner {
@@ -146,15 +170,18 @@ main #contact #box {
   background-size: 100%;
   height: 25em;
 }
-#banner h1 {
+#banner #heading {
   height: 100%;
+  width: 100%;
   margin-top: 0;
   margin-bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#banner #heading h1 {
+  font-family: "Enriqueta";
   font-size: 5em;
   color: black;
-}
-
-/*# sourceMappingURL=index.css.map */
+  background-color: rgba(59, 143, 73, 0.5);
+}/*# sourceMappingURL=index.css.map */
