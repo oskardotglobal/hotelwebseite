@@ -47,6 +47,7 @@ a:hover {
   width: 10em;
   font-size: 1.1em;
   font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
 }
 .button:hover {
   transform: scale(1.05);
@@ -220,6 +221,8 @@ main #content #continue-btn {
   width: 10em;
   font-size: 1.1em;
   font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+  border-radius: 0.3em;
 }
 main #content #continue-btn:hover {
   transform: scale(1.05);
